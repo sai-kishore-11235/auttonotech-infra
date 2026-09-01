@@ -72,7 +72,7 @@ function TrussCanvas() {
       const span = W / cols;
       const dpr = window.devicePixelRatio || 1;
       ctx.lineWidth = 1 * dpr;
-      ctx.strokeStyle = "rgba(39,170,225,0.36)";
+      ctx.strokeStyle = "rgba(46,134,200,0.45)";
       ctx.beginPath();
       for (let i = 0; i <= cols; i++) {
         const x = i * span;
@@ -88,7 +88,7 @@ function TrussCanvas() {
         else ctx.lineTo(x, baseY);
       }
       ctx.stroke();
-      ctx.strokeStyle = "rgba(255,255,255,0.10)";
+      ctx.strokeStyle = "rgba(20,80,127,0.22)";
       for (let i = 0; i <= cols; i++) {
         const x = i * span;
         const wob = Math.sin(i * 0.6 + t * 0.012) * 10 * dpr;
@@ -109,7 +109,7 @@ function TrussCanvas() {
           }
           ctx.stroke();
         }
-        ctx.fillStyle = "rgba(39,170,225,0.62)";
+        ctx.fillStyle = "rgba(46,134,200,0.75)";
         ctx.beginPath();
         ctx.arc(x, topY + wob, 2 * dpr, 0, 7);
         ctx.fill();

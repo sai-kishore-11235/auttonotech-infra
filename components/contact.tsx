@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { contactFacts, sectorOptions } from "@/lib/content";
+import { sectorOptions } from "@/lib/content";
 import { Reveal } from "./reveal";
 
 export function Contact() {
@@ -31,7 +31,7 @@ export function Contact() {
         <Reveal className="sec-head">
           <div>
             <div className="eyebrow">
-              <span className="label">06 — Contact</span>
+              <span className="label">Contact</span>
             </div>
             <h2>
               Start The
@@ -39,69 +39,51 @@ export function Contact() {
               Conversation.
             </h2>
           </div>
-          <div className="idx">{"// HSR LAYOUT, BLR"}</div>
         </Reveal>
-        <Reveal className="cgrid">
-          <div className="cinfo">
-            {contactFacts.map((fact) => (
-              <div className="blk" key={fact.k}>
-                <div className="k">{fact.k}</div>
-                <div className="v">
-                  {fact.v.split("\n").map((line) => (
-                    <span key={line}>
-                      {line}
-                      <br />
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div>
-            <form id="enquiry" onSubmit={onSubmit}>
-              <div className="row2">
-                <div className="fr">
-                  <label htmlFor="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div className="fr">
-                  <label htmlFor="org">Organisation</label>
-                  <input id="org" name="org" type="text" placeholder="Company" />
-                </div>
-              </div>
-              <div className="row2">
-                <div className="fr">
-                  <label htmlFor="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="you@company.com" required />
-                </div>
-                <div className="fr">
-                  <label htmlFor="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" placeholder="+91" />
-                </div>
+        <Reveal className="cform">
+          <form id="enquiry" onSubmit={onSubmit}>
+            <div className="row2">
+              <div className="fr">
+                <label htmlFor="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
               </div>
               <div className="fr">
-                <label htmlFor="sector">Project Sector</label>
-                <select id="sector" name="sector" defaultValue={sectorOptions[0]}>
-                  {sectorOptions.map((option) => (
-                    <option key={option}>{option}</option>
-                  ))}
-                </select>
+                <label htmlFor="org">Organisation</label>
+                <input id="org" name="org" type="text" placeholder="Company" />
+              </div>
+            </div>
+            <div className="row2">
+              <div className="fr">
+                <label htmlFor="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@company.com" required />
               </div>
               <div className="fr">
-                <label htmlFor="msg">Project Details</label>
-                <textarea
-                  id="msg"
-                  name="msg"
-                  rows={4}
-                  placeholder="Tell us about your project, location and timeline."
-                />
+                <label htmlFor="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+91" />
               </div>
-              <button className="btn" type="submit">
-                Submit Enquiry &nbsp;→
-              </button>
-              <div className={accent ? "form-note accent" : "form-note"}>{note}</div>
-            </form>
-          </div>
+            </div>
+            <div className="fr">
+              <label htmlFor="sector">Project Sector</label>
+              <select id="sector" name="sector" defaultValue={sectorOptions[0]}>
+                {sectorOptions.map((option) => (
+                  <option key={option}>{option}</option>
+                ))}
+              </select>
+            </div>
+            <div className="fr">
+              <label htmlFor="msg">Project Details</label>
+              <textarea
+                id="msg"
+                name="msg"
+                rows={4}
+                placeholder="Tell us about your project, location and timeline."
+              />
+            </div>
+            <button className="btn" type="submit">
+              Submit Enquiry &nbsp;→
+            </button>
+            <div className={accent ? "form-note accent" : "form-note"}>{note}</div>
+          </form>
         </Reveal>
       </div>
     </section>

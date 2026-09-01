@@ -6,7 +6,7 @@ export function Footer() {
       <div className="wrap">
         <div className="fgrid">
           <div className="fbrand">
-            <Brand />
+            <Brand variant="dark" />
             <p>
               In pursuit of engineering excellence across EPC, civil, renewable
               energy, industrial and government infrastructure in India.
@@ -32,7 +32,7 @@ export function Footer() {
         </div>
         <div className="fbottom">
           <p>© 2026 Auttonotech Solutions Pvt Ltd. All rights reserved.</p>
-          <p className="cin">CIN: U63110KA2025PTC197715 · HSR Layout, Bangalore</p>
+          <p className="cin">HSR Layout, Bangalore</p>
         </div>
       </div>
     </footer>

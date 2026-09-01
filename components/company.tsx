@@ -8,7 +8,7 @@ export function Why() {
         <Reveal className="sec-head">
           <div>
             <div className="eyebrow">
-              <span className="label">03 — Why Auttonotech</span>
+              <span className="label">Why Auttonotech</span>
             </div>
             <h2>
               Built On Capability,
@@ -16,12 +16,10 @@ export function Why() {
               Discipline &amp; Trust.
             </h2>
           </div>
-          <div className="idx">{"// THE DIFFERENCE"}</div>
         </Reveal>
         <Reveal className="whygrid">
           {whyCards.map((card) => (
-            <div className="wcard" key={card.n}>
-              <div className="wnum">{card.n}</div>
+            <div className="wcard" key={card.title}>
               <h3>{card.title}</h3>
               <p>{card.body}</p>
             </div>
@@ -39,7 +37,7 @@ export function Pipeline() {
         <Reveal className="sec-head">
           <div>
             <div className="eyebrow">
-              <span className="label">04 — Projects &amp; Pipeline</span>
+              <span className="label">Projects &amp; Pipeline</span>
             </div>
             <h2>
               Where We&apos;re
@@ -47,7 +45,6 @@ export function Pipeline() {
               Building Next.
             </h2>
           </div>
-          <div className="idx">{"// FY 2026 ONWARD"}</div>
         </Reveal>
         <Reveal className="pipe-grid">
           <div>
@@ -105,7 +102,7 @@ export function Leadership() {
         <Reveal className="sec-head">
           <div>
             <div className="eyebrow">
-              <span className="label">05 — Leadership</span>
+              <span className="label">Leadership</span>
             </div>
             <h2>
               The People
@@ -113,7 +110,6 @@ export function Leadership() {
               Behind Execution.
             </h2>
           </div>
-          <div className="idx">{"// BOARD APPOINTED"}</div>
         </Reveal>
         <Reveal className="lead-card">
           <div className="lead-photo">

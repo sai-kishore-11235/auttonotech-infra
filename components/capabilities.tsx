@@ -22,7 +22,7 @@ export function Sectors() {
         <Reveal className="sec-head">
           <div>
             <div className="eyebrow">
-              <span className="label">01 — Core Business Areas</span>
+              <span className="label">Core Business Areas</span>
             </div>
             <h2>
               Six Sectors.
@@ -30,15 +30,13 @@ export function Sectors() {
               One Engineering Standard.
             </h2>
           </div>
-          <div className="idx">{"// CAPABILITY MATRIX"}</div>
         </Reveal>
         <Reveal className="grid-sec">
           {sectors.map((sector) => (
-            <div className="scard" key={sector.n}>
+            <div className="scard" key={sector.title}>
               <div className="ico" aria-hidden="true">
                 <SectorIconGraphic name={sector.icon} />
               </div>
-              <div className="n">{sector.n}</div>
               <h3>{sector.title}</h3>
               <ul>
                 {sector.items.map((item) => (
@@ -60,7 +58,7 @@ export function Services() {
         <Reveal className="sec-head">
           <div>
             <div className="eyebrow">
-              <span className="label">02 — Service Lines</span>
+              <span className="label">Service Lines</span>
             </div>
             <h2>
               End-to-End Delivery,
@@ -68,12 +66,10 @@ export function Services() {
               From Tender to Handover.
             </h2>
           </div>
-          <div className="idx">{"// 08 CAPABILITIES"}</div>
         </Reveal>
         <Reveal>
           {services.map((service) => (
-            <div className="srow" key={service.n}>
-              <div className="sn">{service.n}</div>
+            <div className="srow" key={service.title}>
               <h3>{service.title}</h3>
               <div className="sd">{service.detail}</div>
             </div>
