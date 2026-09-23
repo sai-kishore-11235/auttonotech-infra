@@ -121,10 +121,7 @@ export function Leadership() {
             <div className="role">Vice President — Infrastructure Projects</div>
             <h3>Bharani Shankar M</h3>
             <p>
-              Appointed directly by Board Resolution dated 28 May 2026, Bharani
-              leads the Infrastructure Division across project development, EPC
-              delivery and execution. He owns the division&apos;s project strategy,
-              partnerships and on-site delivery discipline.
+              Appointed to the Board on 28 May 2026, Bharani leads the Infrastructure Division end-to-end — from project development through EPC delivery to on-site execution. Backed by over 12 years of RCC execution and quantity surveying experience, including large-scale refinery civil packages, he owns the division&apos;s project strategy, partnerships, and delivery discipline.
             </p>
             <div className="resp">
               {responsibilities.map((item) => (
